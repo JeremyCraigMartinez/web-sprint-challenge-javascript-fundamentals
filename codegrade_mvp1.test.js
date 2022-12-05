@@ -1,4 +1,5 @@
-import functions from './index';
+const functions = require('./index');
+
 const zooAnimals = [
     { animal_name: "Jackal, asiatic", population: 5, scientific_name: "Canis aureus", state: "Kentucky" },
     { animal_name: "Screamer, southern", population: 1, scientific_name: "Chauna torquata", state: "Alabama" },
@@ -122,7 +123,7 @@ describe('Instance of CuboidMaker', () => {
     beforeEach(() => {
       cuboid = new functions.CuboidMaker({
         length: 4,
-        width: 5, 
+        width: 5,
         height:5,
       })
     })
@@ -158,7 +159,7 @@ describe('Instance of CuboidMakerTwo', () => {
     beforeEach(() => {
       cuboidTwo = new functions.CuboidMakerTwo({
         length: 4,
-        width: 5, 
+        width: 5,
         height:5,
       })
     })
